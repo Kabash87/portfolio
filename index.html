@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Portafolio Digital</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/progreso.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Menu de navegacion-->
+    <div class="navegador">
+      <header>
+        <div class="logo">
+          <a href="#">Diego</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+            <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+            </li>
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">Mi portafolio</a>
+            </li>
+            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+          </ul>
+        </nav>
+        <!--Para el Responsive del Menu-->
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--Sección de Inicio-->
+    <section class="inicio" id="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/fotoprofe.jpg" alt="Foto profesional" width="30%" />
+        </div>
+        <h1>Diego Hernández</h1>
+        <h2>Desarrollador Web - Full Stack</h2>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/diego-hern%C3%A1ndez-1a6423245"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/diegokabash" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://github.com/Kabash87" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:diegohs1503@gmail.com"
+            ><i class="fa-solid fa-square-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion Sobre Mi, con mi informacion-->
+    <section class="sobremi" id="sobremi">
+      <div class="contenido-seccion">
+        <h2>Un poco acerca de mi...</h2>
+        <p>
+          <span>¿Que tal? Me llamo Diego.</span> Siempre digo que poseo una
+          personalidad dinámica y decidida, me adopto fácil a todos los
+          problemas que se me presenten. Actitud de líder innata, creatividad en
+          cada idea y decidido en mis objetivos, entusiasmo por aprender cada
+          día más algo nueva. Actitud extrovertida en grupos de trabajo y un
+          reto personal de ser el mejor siempre. 😼👊
+        </p>
+
+        <div class="fila">
+          <!--Datos personales sobre mi-->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Número de telefono: </strong>
+                +34 682 681 001
+              </li>
+              <li>
+                <strong>Dirección: </strong>
+                Madrid, España
+              </li>
+              <li>
+                <strong>Correo Electronico:</strong>
+                diegohs1503@gmail.com
+              </li>
+              <li>
+                <strong>Disponibilidad: </strong>
+                Inmediata
+              </li>
+            </ul>
+          </div>
+          <!--Intereses-->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Videojuegos</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Música</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>Programar</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-compass"></i>
+                <span>Explorar</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-node"></i>
+                <span>Node</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1LGVhOqJWSX4Mj6jLpZ2LcAj2uJPfFj8v/view?usp=sharing"
+          target="_blank"
+        >
+          <button>
+            Descargar Curriculum <i class="fa-solid fa-file-arrow-down"></i>
+            <span class="overlay"></span></button
+        ></a>
+      </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Mis Skills</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso html">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="barra-skill">
+                <div class="progreso php">
+                  <span>76%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React </span>
+              <div class="barra-skill">
+                <div class="progreso react">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Node JS</span>
+              <div class="barra-skill">
+                <div class="progreso node">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profesional Skills -->
+          <div class="col">
+            <h3>Profesional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso comunicacion">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso trabajo">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creatividad">
+                  <span>92%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso dedicacion">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso management">
+                  <span>83%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Curriculum-->
+    <section class="curriculum" id="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <!--Configuracion de la parte de la izquierda-->
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>
+                Grado Superior en Desarrollo de Aplicaciones Multiplataforma
+              </h4>
+              <span class="casa"
+                >Instituto Salesiano "Las Naves" - Alcalá de Henares,
+                España</span
+              >
+              <span class="fecha">Actualmente</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                animi at voluptatem doloribus voluptates voluptas enim provident
+                obcaecati, pariatur magni, eligendi rerum rem quasi maxime quia
+                cumque neque ea! Nobis?
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Bootcamp Desarrollo Web - Full Stack</h4>
+              <span class="casa">KeepCoding Tech School - Madrid, España</span>
+              <span class="fecha">2022-2023</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                animi at voluptatem doloribus voluptates voluptas enim provident
+                obcaecati, pariatur magni, eligendi rerum rem quasi maxime quia
+                cumque neque ea! Nobis?
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1yxeB9i40z7ckur27JgLyzCn97UtT7oE5/view?usp=sharing"
+                target="_blank"
+              >
+                <button>
+                  Ver Certificado <i class="fa-regular fa-file"></i>
+                  <span class="overlay"></span></button
+              ></a>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Técnico - Área Técnica TICs - Informatica</h4>
+              <span class="casa"
+                >Institución Salesiana "Don Bosco" - Quito, Ecuador</span
+              >
+              <span class="fecha">2019-2022</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                animi at voluptatem doloribus voluptates voluptas enim provident
+                obcaecati, pariatur magni, eligendi rerum rem quasi maxime quia
+                cumque neque ea! Nobis?
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--Configuracion de la parte de la derecha-->
+          <div class="col derecha">
+            <h3>Experiencias</h3>
+            <div class="item der">
+              <h4>Desarrollador Full Stack</h4>
+              <span class="casa"
+                >Whataduck! | Proyecto de tienda de productos en línea</span
+              >
+              <span class="fecha">2023 | Proyecto Virtual</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                animi at voluptatem doloribus voluptates voluptas enim provident
+                obcaecati, pariatur magni, eligendi rerum rem quasi maxime quia
+                cumque neque ea! Nobis?
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Project Manager</h4>
+              <span class="casa"
+                >Meesh Social | Proyecto de Red Social juvenil</span
+              >
+              <span class="fecha">2021- 2022 | Quito, Ecuador</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                animi at voluptatem doloribus voluptates voluptas enim provident
+                obcaecati, pariatur magni, eligendi rerum rem quasi maxime quia
+                cumque neque ea! Nobis?
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Portafolio-->
+    <section class="portafolio" id="portafolio">
+      <div class="contenido-seccion">
+        <h2>Mi portafolio</h2>
+
+        <p>
+          Echa un pequeño vistazo a mis proyectos anteriores. ¿Que te parecen?
+          🤔
+        </p>
+
+        <div class="galeria">
+          <!--Subdivicion de Proyectos-->
+          <div class="proyecto">
+            <img src="img/meesh.png" alt="meesh" />
+            <div class="overlay">
+              <h3>Meesh! | Expresate tal como eres</h3>
+              <p>Red Social</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/whataduck.png" alt="whataduck" />
+            <div class="overlay">
+              <h3>Whataduck | ¿Que com-pato-remos hoy?</h3>
+              <p>Tienda en línea</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contacto-->
+    <section class="contacto" id="contacto">
+      <div class="contenido-seccion">
+        <h2>¿Quieres saber más? ¡Contáctame y preguntame!</h2>
+        <div class="info">
+          <p>
+            Puedes rellenar el formulario y ponernos en contacto, o buscarme en
+            mis Redes Sociales si prefieres
+          </p>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <form
+              action="https://formsubmit.co/diegohs1503@outlook.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Inserta tu nombre"
+                required
+              />
+              <input
+                type="number"
+                name="numero"
+                placeholder="Inserta tu número"
+                required
+              />
+              <input
+                type="email"
+                name="correo"
+                placeholder="Inserta tu correo electrónico"
+                required
+              />
+              <textarea
+                name="mensaje"
+                placeholder="Describe tu mensaje"
+                cols="20"
+                rows="10"
+                required
+              ></textarea>
+
+              <button type="submit">
+                Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="col">
+            <div class="info-redes">
+              <h3>Redes Sociales e Información de Contacto:</h3>
+              <br />
+              <ul>
+                <li>
+                  <p>
+                    <i class="fa-solid fa-square-envelope"></i> Correo
+                    Electronico: diegohs1503@gmail.com
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa-solid fa-phone"></i> Número de teléfono: +34
+                    682 681 001
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa-brands fa-linkedin"></i> Perfil de LinkedIn:
+                    <a
+                      href="https://www.linkedin.com/in/diego-hern%C3%A1ndez-1a6423245"
+                      >Diego Hernández</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa-brands fa-github"></i> Perfil de GitHub:
+                    <a href="https://github.com/Kabash87">Kabash87</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/diego-hern%C3%A1ndez-1a6423245"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/diegokabash" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="https://github.com/Kabash87" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:diegohs1503@gmail.com"
+          ><i class="fa-solid fa-square-envelope"></i
+        ></a>
+      </div>
+      <div class="info-imagen">
+        <p style="font-size: 10px; color: black">
+          Origen de imagen de fondo: (
+          <a
+            href="https://www.freepik.es/foto-gratis/render-3d-fondo-techno-lineas-particulas-red-fluidas_13104273.htm"
+            >Imagen de kjpargeter</a
+          >
+          en Freepik )
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
